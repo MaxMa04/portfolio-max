@@ -1,27 +1,24 @@
 <script>
-import { truncateTextToXWords } from '@/helpers/helpers.js';
+import { truncateTextToXWords } from "@/helpers/helpers.js";
 export default {
-  
   components: {},
   name: "HomeComponent",
   data: () => {
     return {
       showFlag: false,
-      text: `Welcome to my Portfolio Website! I'm Max Mannstein, a passionate
-      programmer born in 2004 in Germany. Programming has become my greatest
-      ardor, and I have gained substantial experience, particularly in C#. To
-      expand my skill set, I recently developed a portfolio website using Vue.
-      Through this website, I showcase projects in an engaging and interactive
-      manner, enhancing my expertise. Previous projects have sharpened my
-      technical abilities and problem-solving skills. I strive to stay at the
-      forefront of technological advancements and contribute to the
-      ever-evolving field of software development. Thank you for visiting my
-      portfolio website. Explore my projects and witness my passion for
-      programming and development. Let's embark on this journey together! Feel
-      free to contact me for collaborations or inquiries. I look forward to
-      connecting with you!`,
+      text: `Welcome to my Portfolio Website! I'm Max Mannstein, a passionate programmer 
+      born in Germany in 2004. Programming has become my greatest passion, and I have 
+      accumulated significant experience, especially in C#. To further expand my skill 
+      set, I recently developed this portfolio website using Vue.js. Through this 
+      platform, I showcase my projects in an engaging and interactive manner, 
+      enhancing my expertise. Throughout my journey, previous projects have honed my 
+      technical abilities and problem-solving skills. I am committed to staying at the 
+      forefront of technological advancements and contributing to the ever-evolving 
+      field of software development. Thank you for visiting my portfolio website. I 
+      invite you to explore my projects and witness my passion for programming and 
+      development. Let's embark on this journey together! Feel free to contact me for 
+      collaborations or inquiries; I eagerly look forward to connecting with you!`,
       smText: "",
-      
     };
   },
 
@@ -38,7 +35,6 @@ export default {
   updated() {},
 
   methods: {
-    
     handleResize() {
       if (window.innerWidth <= 768) {
         this.showFlag = false;

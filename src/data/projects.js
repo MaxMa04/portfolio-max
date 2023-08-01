@@ -140,7 +140,27 @@ const projects = [
       "Vue.js",
       "Web Development",
     ],
-    challenge: [``, ``, ``],
+    challenge: [`After several unsuccessful attempts at building websites, the idea of 
+    creating a portfolio website about myself occurred to me while developing my second 
+    mobile application. It was a meaningful project that I had been considering for quite some time. 
+    However, I lacked the motivation to learn something new and felt overwhelmed by the 
+    numerous possibilities available. With an abundance of JavaScript frameworks, I 
+    ultimately decided to use Vue.js and chose Bootstrap 5 for the styling.`, 
+    `So, I started watching tutorials, which bored me to a great extent. I thought it 
+    was the most effective way to learn a new programming language. However, I realized 
+    that this approach was wrong after abandoning the first tutorial halfway through. I 
+    came to the conclusion that I learn best by doing it myself. Therefore, I began 
+    experimenting on my own, and to my surprise, the development process became much 
+    easier thanks to my fundamental understanding of programming and the assistance 
+    from Google, Stack Overflow, and even a bit from ChatGPT. Within approximately 
+    two weeks of work, I successfully completed my project without major setbacks.`, 
+    `Overall, I am extremely satisfied with my portfolio website. While it may not be 
+    the flashiest, it certainly fulfills its purpose and achieves the goals I set out 
+    to accomplish. I am amazed at what can be achieved in just two weeks with the right 
+    tools and the right mindset. It has been a valuable learning experience, and I feel 
+    proud to have created a platform that showcases my work and skills in the software 
+    development field. I look forward to continuing to improve and expand my portfolio 
+    as I progress in my career.`],
     privacy: null,
     client: null,
   },
