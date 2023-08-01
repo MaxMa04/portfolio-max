@@ -1,0 +1,34 @@
+<script>
+export default {
+  name: "ResumeComponent",
+  components: {},
+  props: ["skill"],
+  data: () => {
+    return {};
+  },
+  created() {},
+  mounted() {},
+  updated() {},
+  methods: {},
+};
+</script>
+<template>
+  <div class="col-lg-6 mt-md-4 mb-4 mb-md-0">
+    <!-- Inhalt für die linke Spalte -->
+
+    <h5>{{ skill.name }}</h5>
+    <!-- Fortschrittsbalken für die linke Spalte -->
+    <div class="progress" style="height: 20px">
+      <div
+        class="progress-bar"
+        role="progressbar"
+        :style="{ width: skill.percentage + '%' }"
+        :aria-valuenow="skill.percentage"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      >
+        {{ skill.percentage }}%
+      </div>
+    </div>
+  </div>
+</template>
