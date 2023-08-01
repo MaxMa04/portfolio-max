@@ -14,18 +14,18 @@ export default {
 };
 </script>
 <template>
-  <footer class="text-center text-lg-start bg-success">
+  <footer class="text-center color1 text-lg-start">
     <div class="container d-flex justify-content-center py-4">
       <a
         type="button"
-        class="btn btn-primary btn-lg rounded-4 btn-floating mx-2"
+        class="btn color3 btn-lg rounded-4 btn-floating mx-2"
         href="https://github.com/MaxMa04"
       >
         <i class="bi bi-github"></i>
       </a>
       <a
         type="button"
-        class="btn btn-primary btn-lg rounded-4 btn-floating mx-2"
+        class="btn color3 btn-lg rounded-4 btn-floating mx-2"
         href="https://www.linkedin.com/in/max-mannstein-04437025a/"
       >
         <i class="bi bi-linkedin"></i>
@@ -33,7 +33,7 @@ export default {
       
       <router-link
         type="button"
-        class="btn btn-primary btn-lg rounded-4 btn-floating mx-2"
+        class="btn btn-lg color3 rounded-4 btn-floating mx-2"
         to="/imprint"
       >
         Imprint

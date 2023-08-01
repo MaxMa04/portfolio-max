@@ -6,7 +6,7 @@
       v-if="showButton"
       @click="scrollToTop"
       id="scrollToTopBtn"
-      class="btn btn-primary rounded-5"
+      class="btn color3 rounded-5"
       ><i class="bi bi-caret-up icon"></i
     ></a>
   </div>
@@ -39,7 +39,7 @@ export default {
 <style>
 #scrollToTopBtn {
   position: fixed;
-  opacity: 0.7;
+  opacity: 0.8;
   bottom: 20px;
   right: 20px;
   width: 50px;
@@ -47,7 +47,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #007bff;
   color: #fff;
 }
 .icon {

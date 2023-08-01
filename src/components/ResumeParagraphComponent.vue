@@ -37,7 +37,7 @@ export default {
   <div class="row">
     <div class="col">
       <div class="card mb-2">
-        <h3 class="card-header bg-danger">{{ paragraph.title }}</h3>
+        <h3 class="card-header color3">{{ paragraph.title }}</h3>
         <ul class="list-group list-group-flush">
           <li v-if="paragraph.graduationGrade != null" class="list-group-item">
             Graduation Grade: {{ paragraph.graduationGrade }}
@@ -50,12 +50,12 @@ export default {
           </li>
         </ul>
         <div>
-          <div class="card-body" v-show="!showFlag">
+          <div class="card-body color2" v-show="!showFlag">
             <p class="card-text mb-0">{{ smText }}</p>
             <p class="btn mb-0" @click="showFlag = true">Show More</p>
           </div>
 
-          <div class="card-body" v-show="showFlag">
+          <div class="card-body color2" v-show="showFlag">
             <p class="card-text mb-0">{{ text }}</p>
             <p class="btn d-md-none mb-0" @click="showFlag = false">Show Less</p>
           </div>

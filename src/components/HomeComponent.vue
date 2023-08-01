@@ -75,7 +75,7 @@ export default {
       </h2>
       <div class="d-grid">
         <button
-          class="btn btn-outline-success rounded-4 mx-auto ms-lg-4 btn-lg mt-1"
+          class="btn color3 rounded-4 mx-auto ms-lg-4 btn-lg mt-1"
           type="button"
           @click.prevent="downloadCV('CV-Max.pdf', 'files/Lebenslauf.pdf')"
         >

@@ -21,7 +21,7 @@ export default {
 
 <template>
   <h1 class="text-center text-uppercase display-3 mb-5">
-    My <mark class="bg-success rounded-5">Resume</mark>
+    My <mark class="color3 rounded-5">Resume</mark>
   </h1>
   <div class="container mt-5">
     <div class="row">

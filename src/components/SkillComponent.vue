@@ -18,9 +18,9 @@ export default {
 
     <h5>{{ skill.name }}</h5>
     <!-- Fortschrittsbalken für die linke Spalte -->
-    <div class="progress" style="height: 20px">
+    <div class="progress color2" style="height: 20px">
       <div
-        class="progress-bar"
+        class="progress-bar color3"
         role="progressbar"
         :style="{ width: skill.percentage + '%' }"
         :aria-valuenow="skill.percentage"

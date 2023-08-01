@@ -20,3 +20,25 @@ export default {
   }
 }
 </script>
+<style>
+#app{
+  background-color: #686E6F !important;
+  
+  color: #F6E8EA;
+}
+.color1{
+  background-color: #434747;
+}
+.color2{
+  background-color: #BBBBBF;
+}
+li{
+  background-color: #BBBBBF!important;
+}
+.color3{
+  background-color: #A3F7FF;
+}
+.progress-bar{
+  color: black;
+}
+</style>

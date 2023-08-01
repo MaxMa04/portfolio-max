@@ -15,7 +15,7 @@ export default {
 };
 </script>
 <template>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark py-4">
+  <nav class="navbar navbar-expand-sm color1 navbar-dark py-4">
     <div class="container-fluid">
       <router-link class="navbar-brand" to="/">Max Mannstein</router-link>
       <button v-if="$route.name === 'home'"
@@ -49,4 +49,8 @@ export default {
     </div>
   </nav>
 </template>
-<style></style>
+<style scoped>
+li{
+  background-color: transparent !important;
+}
+</style>

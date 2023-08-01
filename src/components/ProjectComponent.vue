@@ -13,7 +13,7 @@ export default {
   <div class="col">
     <div class="card mx-auto border-success mb-3" style="width: 19.5rem" >
       <img v-bind:src="project.img" class="card-img-top" @click="navigateToDetail(project.id)"/>
-      <div class="card-body">
+      <div class="card-body color2">
         <h5 class="card-title" @click="navigateToDetail(project.id)">{{ project.title }}</h5>
         <p class="card-text">
           {{ project.description }}

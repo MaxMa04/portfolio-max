@@ -37,7 +37,7 @@ export default {
 </script>
 <template>
   <h1 class="text-center text-uppercase display-3 mb-5">
-    My <mark class="bg-success rounded-5">Projects</mark>
+    My <mark class="color3 rounded-5">Projects</mark>
   </h1>
 
   <div
