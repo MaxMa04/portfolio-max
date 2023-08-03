@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import ProjectDetailView from '../views/ProjectDetailView.vue'
 import PrivacyView from '../views/PrivacyView.vue'
 import ImprintView from '../views/ImprintView.vue'
+import LoveView from '../views/LoveView.vue'
 
 const routes = [
   {
@@ -13,26 +14,22 @@ const routes = [
   {
     path: '/:id',
     name: 'project',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: ProjectDetailView
   },
   {
     path: '/:id/privacy',
     name: 'privacy',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: PrivacyView
   },
   {
     path: '/imprint',
     name: 'imprint',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: ImprintView
+  },
+  {
+    path: '/simba/zungenstups/26082021',
+    name: 'love',
+    component: LoveView
   },
 ]
 

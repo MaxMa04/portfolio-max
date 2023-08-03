@@ -24,22 +24,22 @@ export default {
       <div class="col-md-8">
         <form action="https://formspree.io/f/xdorklej" method="POST">
           <input
-            class="form-control mb-3 border color2 "
+            class="form-control mb-3 color2 "
             name="name"
             placeholder="Name"
           />
           <input
-            class="form-control mb-3 border color2 "
+            class="form-control mb-3 color2 "
             name="email"
             placeholder="E-Mail"
           />
           <input
-            class="form-control mb-3 border color2 "
+            class="form-control mb-3 color2 "
             name="subject"
             placeholder="Subject"
           />
           <textarea
-            class="form-control border color2  mb-3"
+            class="form-control  color2  mb-3"
             name="body"
             placeholder="How can I help you?"
             style="height: 250px"
@@ -49,7 +49,7 @@ export default {
             type="submit"
             value="Send"
             style="width: 10rem"
-          />
+          >
         </form>
       </div>
     </div>
@@ -59,5 +59,10 @@ export default {
 input {
   float: right;
 }
+.form-control:focus {
+  border-color: #98FF98;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 10px rgba(152, 255, 152, 0.6);
+}
+
 
 </style>

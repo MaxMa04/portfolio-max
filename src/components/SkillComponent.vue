@@ -32,3 +32,9 @@ export default {
     </div>
   </div>
 </template>
+<style scoped>
+.progress{
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+</style>

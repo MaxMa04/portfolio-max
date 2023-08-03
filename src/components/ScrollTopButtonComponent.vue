@@ -39,7 +39,7 @@ export default {
 <style>
 #scrollToTopBtn {
   position: fixed;
-  opacity: 0.8;
+  opacity: 0.85;
   bottom: 20px;
   right: 20px;
   width: 50px;

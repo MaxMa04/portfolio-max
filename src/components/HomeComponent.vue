@@ -5,6 +5,22 @@ export default {
   name: "HomeComponent",
   data: () => {
     return {
+      words: [
+        "Software Developer",
+        "Student",
+        "Mobile App Developer",
+        "Freelancer",
+        "Full-Stack Developer",
+       
+      ],
+      part: "",
+      i: 0,
+      offset: 0,
+      len: 0,
+      forwards: true,
+      skip_count: 0,
+      skip_delay: 15,
+      speed: 70,
       showFlag: false,
       text: `Welcome to my Portfolio Website! I'm Max Mannstein, a passionate programmer 
       born in Germany in 2004. Programming has become my greatest passion, and I have 
@@ -22,7 +38,10 @@ export default {
     };
   },
 
-  created() {},
+  created() {
+    this.len = this.words.length;
+    this.wordflick();
+  },
   mounted() {
     this.smText = truncateTextToXWords(this.text, 50);
     window.addEventListener("resize", this.handleResize);
@@ -35,6 +54,36 @@ export default {
   updated() {},
 
   methods: {
+    wordflick() {
+      setInterval(() => {
+        if (this.forwards) {
+          if (this.offset >= this.words[this.i].length) {
+            this.skip_count++;
+            if (this.skip_count === this.skip_delay) {
+              this.forwards = false;
+              this.skip_count = 0;
+            }
+          }
+        } else {
+          if (this.offset === 0) {
+            this.forwards = true;
+            this.i++;
+            this.offset = 0;
+            if (this.i >= this.len) {
+              this.i = 0;
+            }
+          }
+        }
+        this.part = this.words[this.i].substr(0, this.offset);
+        if (this.skip_count === 0) {
+          if (this.forwards) {
+            this.offset++;
+          } else {
+            this.offset--;
+          }
+        }
+      }, this.speed);
+    },
     handleResize() {
       if (window.innerWidth <= 768) {
         this.showFlag = false;
@@ -65,26 +114,24 @@ export default {
       />
     </div>
     <div class="col-lg-6 pt-4 px-0">
-      <h1 class="text-center text-lg-start display-2 mb-2">
+      <h1 class="text-center text-lg-start display-1 mb-2">
         &lt;Hi, I Am Max/&gt;
       </h1>
-      <h2
-        class="ms-0 ms-lg-4 text-muted text-center text-lg-start display-6 mb-3 mb-xl-4"
+      <div
+        class="d-flex align-items-center justify-content-center justify-content-lg-start"
       >
-        a Software Developer
-      </h2>
+        <span class="word tcolor3 display-6 ms-lg-4">a {{ part }}</span>
+      </div>
+
+      <hr />
       <div class="d-grid">
         <button
-          class="btn color3 rounded-4 mx-auto ms-lg-4 btn-lg mt-1"
+          class="btn color3 rounded-4 mx-auto ms-lg-4 btn-lg mt-3 d-flex align-items-center"
           type="button"
           @click.prevent="downloadCV('CV-Max.pdf', 'files/Lebenslauf.pdf')"
         >
-          <img
-            class="download-image"
-            src="../assets/download.png"
-            alt="Image"
-          />
-          <span>Download CV</span>
+          <i class="bi bi-download me-2" style="font-size: 25px"></i> Download
+          CV
         </button>
       </div>
     </div>
@@ -105,8 +152,12 @@ export default {
 </template>
 
 <style scoped>
+li {
+  background-color: transparent !important;
+}
 .large-image {
   width: 55%;
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
   height: auto;
 }
 .download-image {
@@ -114,5 +165,12 @@ export default {
   height: auto;
   margin-right: 10px;
   margin-bottom: 4px;
+}
+.word {
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+  
+}
+.display-1{
+  white-space: nowrap;
 }
 </style>

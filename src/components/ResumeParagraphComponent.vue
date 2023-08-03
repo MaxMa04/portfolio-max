@@ -36,7 +36,7 @@ export default {
 <template>
   <div class="row">
     <div class="col">
-      <div class="card mb-2">
+      <div class="card mb-3">
         <h3 class="card-header color3">{{ paragraph.title }}</h3>
         <ul class="list-group list-group-flush">
           <li v-if="paragraph.graduationGrade != null" class="list-group-item">
@@ -64,3 +64,9 @@ export default {
     </div>
   </div>
 </template>
+<style scoped>
+.card{
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+</style>

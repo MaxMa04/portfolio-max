@@ -13,7 +13,7 @@ export default {
 </script>
 <template>
   <div class="container px-5">
-    <h1 class="my-5">Imprint</h1>
+    <h1 class="my-4 display-1">Imprint</h1>
     <p>
       Information according to § 5 of the Telemedia Act (TMG): <br />
       Max Mannstein <br />

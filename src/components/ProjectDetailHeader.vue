@@ -14,7 +14,7 @@ export default {
 </script>
 <template>
   <div class="container">
-    <h1 class="pt-4">{{ project.title }}</h1>
+    <h1 class="pt-4 display-2">{{ project.title }}</h1>
     <div class="d-flex flex-row">
       <div class="ps-1 pe-4 py-2">
         <i class="bi bi-clock-history"></i> {{ project.time }}

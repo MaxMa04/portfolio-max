@@ -19,26 +19,38 @@ export default {
   
   }
 }
+//#A3F7FF blau
 </script>
 <style>
 #app{
   background-color: #686E6F !important;
   
-  color: #F6E8EA;
+  color: #fff9fa;
 }
 .color1{
   background-color: #434747;
 }
 .color2{
-  background-color: #BBBBBF;
+  background-color: #b2b2b2 !important;
 }
 li{
-  background-color: #BBBBBF!important;
+  background-color: #b2b2b2!important;
 }
 .color3{
-  background-color: #A3F7FF;
+  background-color:  #98FF98 !important; 
 }
-.progress-bar{
+.tcolor2{
   color: black;
 }
+.tcolor3{
+  color: #98FF98;
+}
+.progress-bar{
+  color: black !important;
+}
+mark{
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+
 </style>
