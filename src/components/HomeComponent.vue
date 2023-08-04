@@ -128,7 +128,7 @@ export default {
         <button
           class="btn color3 rounded-4 mx-auto ms-lg-4 btn-lg mt-3 d-flex align-items-center"
           type="button"
-          @click.prevent="downloadCV('CV-Max.pdf', 'files/Lebenslauf.pdf')"
+          @click.prevent="downloadCV('CV-Max-Mannstein.pdf', 'files/CV.pdf')"
         >
           <i class="bi bi-download me-2" style="font-size: 25px"></i> Download
           CV
