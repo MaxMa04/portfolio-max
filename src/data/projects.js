@@ -1,18 +1,20 @@
 const projects = [
   {
     id: 1,
-    img: require("@/assets/abisax-preview.png"),
+    img: require("@/assets/abisax/abisax-preview.png"),
     title: "AbiSax",
-    description: `An App developed for upper secondary students in Saxony, 
+    description: `Developed for upper secondary students in Saxony, 
     Germany, that simplifies grade management and accurately calculates Abitur 
     averages.`,
     type: "Mobile Application",
     stack: "Xamarin.Forms, C#, SQLite",
     time: "2022-2023",
+    appstore: null,
+    playstore: null,
     detailImgs: [
-      require("@/assets/abisax-preview.png"),
-      require("@/assets/abisax-preview.png"),
-      require("@/assets/abisax-preview.png"),
+      require("@/assets/abisax/abisax-detail1.png"),
+      require("@/assets/abisax/abisax-detail2.png"),
+      require("@/assets/abisax/abisax-detail3.png"),
     ],
     objective: `My objective in creating AbiSax was to provide every high school 
     student in Saxony with a convenient app to manage their grades in a well-organized 
@@ -61,17 +63,19 @@ const projects = [
   },
   {
     id: 2,
-    img: require("@/assets/maislabyrinth-preview.png"),
+    img: require("@/assets/maislabyrinth/maislabyrinth-preview.png"),
     title: "Maislabyrinth WHS",
     description: `An interactive app that enables users to explore a corn maze, 
     allowing them to scan QR codes and answer the provided questions.`,
     type: "Mobile Application",
     stack: ".NET MAUI, C#, Firebase",
     time: "2023",
+    appstore: null,
+    playstore: 'https://play.google.com/store/apps/details?id=com.whs.maislabyrinthwhs',
     detailImgs: [
-      require("@/assets/abisax-preview.png"),
-      require("@/assets/abisax-preview.png"),
-      require("@/assets/abisax-preview.png"),
+      require("@/assets/maislabyrinth/maislabyrinth-detail1.png"),
+      require("@/assets/maislabyrinth/maislabyrinth-detail2.png"),
+      require("@/assets/maislabyrinth/maislabyrinth-detail3.png"),
     ],
     objective: `The objective was to develop an app for the company Wirtschaftshof Sachsenland
     that allows users to scan at different stations within a corn maze. Upon scanning, 
@@ -122,11 +126,9 @@ const projects = [
     type: "Website",
     stack: "HTML, Bootstrap 5, JavaScript, Vue.js",
     time: "2023",
-    detailImgs: [
-      require("@/assets/abisax-preview.png"),
-      require("@/assets/abisax-preview.png"),
-      require("@/assets/abisax-preview.png"),
-    ],
+    appstore: null,
+    playstore: null,
+    detailImgs: null,
     objective: `My goal with my portfolio website was to present my projects and career 
     progression in a clear and organized manner for myself and potential stakeholders 
     (employers, etc.) on the internet. Additionally, the website allows me to look back 

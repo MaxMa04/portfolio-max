@@ -46,12 +46,7 @@ export default {
         <div class="carousel-item active">
           <img src="@/assets/2022_1.png" width="100%" alt="" />
         </div>
-        <div class="carousel-item">
-          <img src="@/assets/portfolio-preview.png" alt="" />
-        </div>
-        <div class="carousel-item">
-          <img src="@/assets/maislabyrinth-preview.png" alt="" />
-        </div>
+        
       </div>
       <button
         class="carousel-control-prev"
@@ -97,16 +92,7 @@ export default {
         ></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="@/assets/abisax-preview.png" alt="" />
-        </div>
-        <div class="carousel-item">
-          <img src="@/assets/portfolio-preview.png" alt="" />
-        </div>
-        <div class="carousel-item">
-          <img src="@/assets/maislabyrinth-preview.png" alt="" />
-        </div>
-      </div>
+      
       <button
         class="carousel-control-prev"
         type="button"
@@ -126,7 +112,7 @@ export default {
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-  
+    </div>
   <h1>2023</h1>
   <div id="myhCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -152,15 +138,7 @@ export default {
       ></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="@/assets/abisax-preview.png" alt="" />
-      </div>
-      <div class="carousel-item">
-        <img src="@/assets/portfolio-preview.png" alt="" />
-      </div>
-      <div class="carousel-item">
-        <img src="@/assets/maislabyrinth-preview.png" alt="" />
-      </div>
+      
     </div>
     <button
       class="carousel-control-prev"

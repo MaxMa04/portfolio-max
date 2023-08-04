@@ -55,16 +55,16 @@ li{
   
 }
 .nav-link{
-  color:  #fff9fa ;
+  color:  #fff9fa !important ;
 }
 .nav-link:hover{
-  color: #98FF98;
+  color: #98FF98 !important;
 }
 .navbar-brand{
-  color:  #fff9fa;
+  color:  #fff9fa !important;
 }
 
 .navbar-brand:hover {
-  color: #98FF98;
+  color: #98FF98 !important;
 }
 </style>
