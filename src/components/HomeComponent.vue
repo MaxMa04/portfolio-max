@@ -11,9 +11,9 @@ export default {
         "Mobile App Developer",
         "Freelancer",
         "Full-Stack Developer",
-       
       ],
       part: "",
+      prevWidth: null,
       i: 0,
       offset: 0,
       len: 0,
@@ -44,6 +44,7 @@ export default {
   },
   mounted() {
     this.smText = truncateTextToXWords(this.text, 50);
+    this.prevWidth = window.innerWidth;
     window.addEventListener("resize", this.handleResize);
     this.handleResize();
   },
@@ -85,12 +86,15 @@ export default {
       }, this.speed);
     },
     handleResize() {
-      if (window.innerWidth <= 768) {
-        this.showFlag = false;
+      if (window.innerWidth != this.prevWidth) {
+        if (window.innerWidth <= 768) {
+          this.showFlag = false;
+        } else {
+          this.showFlag = true;
+        }
       } else {
-        this.showFlag = true;
+        return;
       }
-      // Hier kannst du weitere Aktionen basierend auf der Bildschirmgröße ausführen
     },
     downloadCV(fileName, link) {
       var a = document.createElement("a");
@@ -168,9 +172,8 @@ li {
 }
 .word {
   text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
-  
 }
-.display-1{
+.display-1 {
   white-space: nowrap;
 }
 </style>

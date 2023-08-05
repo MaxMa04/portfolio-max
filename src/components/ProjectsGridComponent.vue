@@ -12,11 +12,12 @@ export default {
       projects,
       showFlag: false,
       projectSM : [],
+      prevWidth: null,
     };
   },
   mounted() {
     this.projectSM = this.projects.slice(0,2);
-    
+    this.prevWidth = window.innerWidth;
     window.addEventListener("resize", this.handleResize);
     this.handleResize();
   },
@@ -26,10 +27,14 @@ export default {
   updated() {},
   methods: {
     handleResize() {
-      if (window.innerWidth <= 768) {
-        this.showFlag = false;
+      if (window.innerWidth != this.prevWidth) {
+        if (window.innerWidth <= 768) {
+          this.showFlag = false;
+        } else {
+          this.showFlag = true;
+        }
       } else {
-        this.showFlag = true;
+        return;
       }
     },
   },
