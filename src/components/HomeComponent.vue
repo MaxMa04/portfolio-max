@@ -41,8 +41,14 @@ export default {
   created() {
     this.len = this.words.length;
     this.wordflick();
+
+    
+    
   },
   mounted() {
+    if(window.innerWidth > 768){
+      this.showFlag = true;
+    }
     this.smText = truncateTextToXWords(this.text, 50);
     this.prevWidth = window.innerWidth;
     window.addEventListener("resize", this.handleResize);

@@ -12,7 +12,11 @@ export default {
       prevWidth: null,
     };
   },
-  created() {},
+  created() {
+    if(window.innerWidth > 768){
+      this.showFlag = true;
+    }
+  },
   mounted() {
     this.text = this.paragraph.description;
     this.smText = truncateTextToXWords(this.text, 20);

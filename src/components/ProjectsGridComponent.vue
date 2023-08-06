@@ -15,6 +15,11 @@ export default {
       prevWidth: null,
     };
   },
+  created(){
+    if(window.innerWidth > 768){
+      this.showFlag = true;
+    }
+  },
   mounted() {
     this.projectSM = this.projects.slice(0,2);
     this.prevWidth = window.innerWidth;
