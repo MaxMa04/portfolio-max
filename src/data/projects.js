@@ -9,8 +9,8 @@ const projects = [
     type: "Mobile Application",
     stack: "Xamarin.Forms, C#, SQLite",
     time: "2022-2023",
-    appstore: null,
-    playstore: null,
+    appstore: 'https://apps.apple.com/de/app/abisax/id6450996587',
+    playstore: 'https://play.google.com/store/apps/details?id=com.max.mannstein.abisax',
     detailImgs: [
       require("@/assets/abisax/abisax-detail1.png"),
       require("@/assets/abisax/abisax-detail2.png"),
