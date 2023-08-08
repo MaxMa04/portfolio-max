@@ -70,7 +70,7 @@ const projects = [
     type: "Mobile Application",
     stack: ".NET MAUI, C#, Firebase",
     time: "2023",
-    appstore: null,
+    appstore: 'https://apps.apple.com/de/app/maislabyrinth-whs-2023/id6450963712',
     playstore: 'https://play.google.com/store/apps/details?id=com.whs.maislabyrinthwhs',
     detailImgs: [
       require("@/assets/maislabyrinth/maislabyrinth-detail1.png"),
