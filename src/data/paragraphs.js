@@ -47,19 +47,7 @@ const paragraphs = [
       my website, showcasing the successful completion of these assignments and the 
       skills I have acquired along the way.`,
   },
-  {
-    id: 4,
-    title: "Dual Study Programme Student",
-    graduationGrade: null,
-    time: "10.2023-today",
-    location: "Hörmann KG Brandis",
-    description:
-      `During my time at Hörmann KG Brandis, I am looking forward to gaining valuable 
-      experience in a real professional environment. I aim to apply the knowledge I 
-      acquire during my studies and put it into practice here. Additionally, my goal 
-      is to take on responsibilities in this work environment and continue my personal 
-      development.`,
-  },
+
 ];
 
 export default paragraphs;
